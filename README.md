@@ -69,4 +69,4 @@ rm -rf ASO-F1
 
 ## Author
 
-* **Pol Navarro Solà** - *Main project* - [](https://github.com/)
+* **Pol Navarro Solà** - *Main project* - [Supersonic2510](https://github.com/Supersonic2510)
