@@ -45,7 +45,7 @@ bash install.sh
 
 1. Enter the directory called ASO-F1:
 ```
-cd ASO-F1
+cd ASO-F1/
 ```
 
 2. Execute scrpit called uninstall:
@@ -55,12 +55,12 @@ bash uninstall.sh
 
 3. Return to the previous directory:
 ```
-cd ./
+cd ../
 ```
 
 4. Remove the directory:
 ```
-rm -rf ASO-F1
+rm -rf ./ASO-F1
 ```
 
 ## Version
