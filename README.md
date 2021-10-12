@@ -30,13 +30,43 @@ A breadboard, 4 pushbuttons, 2 LEDs, 2 1k resistors and 2 330 resistors.
      
 2. Cloning the repository using the following command:
 ```
-git clone 
+git clone https://github.com/Supersonic2510/ASO-F1.git
 ```
-3. Entering the folder called ASO-F1:
+3. Enter the directory called ASO-F1:
 ```
 cd ASO-F1
 ```
-3. Execute scrpit called install:
+4. Execute scrpit called install:
 ```
 bash install.sh
 ```
+
+## Uninstallation
+
+1. Enter the directory called ASO-F1:
+```
+cd ASO-F1
+```
+
+2. Execute scrpit called uninstall:
+```
+bash uninstall.sh
+```
+
+3. Return to the previous directory:
+```
+cd ./
+```
+
+4. Remove the directory:
+```
+rm -rf ASO-F1
+```
+
+## Version
+
+* 0.1
+
+## Author
+
+* **Pol Navarro Solà** - *Main project* - [](https://github.com/)
