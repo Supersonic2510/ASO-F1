@@ -19,6 +19,10 @@ A breadboard, 4 pushbuttons, 2 LEDs, 2 1k resistors and 2 330 resistors.
      ```
      sudo apt update
      ```
+   - Then upgrade all yout packages:
+     ```
+     sudo apt full-upgrade
+     ```
    - Run the following command to install Git:
      ```
      sudo apt install git
