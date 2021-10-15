@@ -14,6 +14,21 @@ then
 	rm -rf *
 	unset GLOBIGNORE
 	rm -rf *.mod.c
+	touch output.txt
+	sudo mkdir /usr/lib/lkm
+	sudo mv output.txt /usr/lib/lkm
+	#create scipt pushbutton 1
+	sudo chmod +x pushbutton1.sh
+	sudo mv pushbutton1.sh /usr/lib/lkm 
+	#create scipt pushbutton 2
+	sudo chmod +x pushbutton2.sh
+	sudo mv pushbutton2.sh /usr/lib/lkm
+	#create scipt pushbutton 3
+	sudo chmod +x pushbutton3.sh
+	sudo mv pushbutton3.sh /usr/lib/lkm
+	#create scipt pushbutton 4
+	sudo chmod +x pushbutton4.sh
+	sudo mv pushbutton4.sh /usr/lib/lkm
 	echo "LED module has succsefully been installed!"
 else
 	#statements

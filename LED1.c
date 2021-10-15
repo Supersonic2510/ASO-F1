@@ -37,17 +37,21 @@ static bool ledOn;
  * @brief  Interrupt handler which mamages which button has been pressed
 */
 static irq_handler_t LED1_irq_handler(unsigned int irq, void *dev_id, struct pt_regs *regs){
-
+static char* envp[] = { "HOME=/", NULL };
    if (irqNumberOn == irq){
+      char* argv[] = {"/usr/lib/lkm/pushbutton1.sh", NULL};
       ledOn = LED_ON;
       gpio_set_value(gpioLED, ledOn);
       numberPressesOn++;
       printk(KERN_INFO "LED1: Interrupt on LED1 (ON) from the LKM\n");
+      call_usermodehelper(argv[0], argv, envp, UMH_NO_WAIT);
    } else if (irqNumberOff == irq) {
+      char* argv[] = {"/usr/lib/lkm/pushbutton2.sh", NULL};
       ledOn = LED_OFF;
       gpio_set_value(gpioLED, ledOn);
       numberPressesOff++;
       printk(KERN_INFO "LED1: Interrupt on LED1 (OFF) from the LKM\n");
+      call_usermodehelper(argv[0], argv, envp, UMH_NO_WAIT);
    } else {
       printk(KERN_ERR "LED1: Interrupt on LED1 (NOT DEFINED) from the LKM\n");
    }
